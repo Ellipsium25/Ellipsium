@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 
 import { UserButton } from "@/features/auth/user-button";
+import { MobileSidebar } from "./mobile-sidebar";
 
 
 const pathnameMap = {
@@ -37,6 +38,9 @@ export const Navbar = () => {
                     <p className="text-muted-foreground">
                         {description}
                     </p>
+            </div>
+            <div className="lg:hidden flex items-center">
+                <MobileSidebar />
             </div>
             <UserButton/>
         </nav>
