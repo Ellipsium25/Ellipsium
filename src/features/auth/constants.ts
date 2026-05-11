@@ -1,1 +1,1 @@
-export const AUTH_COOKIE = "spl-jira-clone-session";
+export const AUTH_COOKIE = "ellipsium-session";
